@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dongwoong Seo — CV</title>
+<meta name="description" content="Curriculum vitae — Dongwoong Seo.">
+<meta property="og:title" content="Dongwoong Seo — CV">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fcfcfa;
+    --ink:#1e1e1c;
+    --ink-soft:#5b5952;
+    --line:#e2e0d6;
+    --accent:#2f4858;
+    --serif:'Newsreader','Iowan Old Style',Georgia,'Times New Roman',serif;
+    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    --maxw:700px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:var(--sans); font-size:16px; line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s ease;}
+  a:hover{border-bottom-color:var(--accent);}
+  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+  header.site-header{border-bottom:1px solid var(--line); padding:22px 0;}
+  header.site-header .wrap{display:flex; align-items:baseline; justify-content:space-between; flex-wrap:wrap; gap:12px;}
+  .brand{font-family:var(--serif); font-size:1.15rem; font-weight:600; color:var(--ink);}
+  .brand:hover{border-bottom:none; color:var(--accent);}
+  nav.site-nav a{
+    font-family:var(--sans); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--ink-soft); margin-left:22px; border-bottom:1px solid transparent; padding-bottom:2px;
+  }
+  nav.site-nav a:first-child{margin-left:0;}
+  nav.site-nav a:hover, nav.site-nav a.active{color:var(--ink); border-bottom-color:var(--accent);}
+  main{padding:52px 0 80px;}
+  h1{font-family:var(--serif); font-weight:600; font-size:2.1rem; margin:0 0 24px; letter-spacing:-.01em;}
+  main p{font-size:1.02rem;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">Dongwoong Seo</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="cv.html" class="active">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>CV</h1>
+    <!-- TODO: consider self-hosting as assets/Seo_CV.pdf instead of Google Drive for reliability -->
+    <p>You can find my CV <a href="https://drive.google.com/file/d/1GjnBootz-lIyQiylRJCublLYF8QxIe2v/view">here</a>.</p>
+  </div>
+</main>
+
+</body>
+</html>
