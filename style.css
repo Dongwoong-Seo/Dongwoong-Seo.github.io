@@ -26,12 +26,16 @@ header.site-header .wrap{display:flex; align-items:center; justify-content:space
 .brand{font-family:var(--serif); font-size:1.15rem; font-weight:600; color:var(--ink); display:flex; align-items:center; gap:10px;}
 .brand-logo{height:26px; width:auto;}
 .brand:hover{border-bottom:none; color:var(--accent);}
+
+/* Tab-style nav */
+nav.site-nav{display:flex; background:var(--line); border-radius:8px; padding:4px; gap:4px;}
 nav.site-nav a{
-  font-family:var(--sans); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
-  color:var(--ink-soft); margin-left:22px; border-bottom:1px solid transparent; padding-bottom:2px;
+  font-family:var(--sans); font-size:.8rem; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--ink-soft); padding:8px 16px; border-radius:6px; border-bottom:none;
+  transition:background-color .15s ease, color .15s ease;
 }
-nav.site-nav a:first-child{margin-left:0;}
-nav.site-nav a:hover, nav.site-nav a.active{color:var(--ink); border-bottom-color:var(--accent);}
+nav.site-nav a:hover{background:rgba(30,30,28,.08); color:var(--ink); border-bottom:none;}
+nav.site-nav a.active{background:var(--accent); color:#fff;}
 
 main{padding:52px 0 80px;}
 main p{font-size:1.02rem;}
@@ -42,12 +46,11 @@ h2.eyebrow{
   font-family:var(--sans); font-size:.78rem; letter-spacing:.12em; text-transform:uppercase;
   color:var(--ink-soft); margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
 }
-h1 + h2.eyebrow{margin-top:0;} /* no big gap when an eyebrow follows the page h1 directly (e.g. Research) */
+h1 + h2.eyebrow{margin-top:0;}
 
 /* Home: photo + bio intro */
 .intro{display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; margin-bottom:8px;}
-.intro img{width:190px; height:230px; object-fit:cover; border-radius:4px; flex-shrink:0; background:var(--line);}
-.intro .bio{flex:1; min-width:240px;}
+.intro img{width:160px; height:200px; object-fit:cover; border-radius:4px; flex-shrink:0; background:var(--line);}.intro .bio{flex:1; min-width:240px;}
 .bio p{margin:0 0 14px; font-size:1.02rem;}
 .email{font-size:.95rem; color:var(--ink-soft);}
 
@@ -68,10 +71,13 @@ ul.news .date{font-family:var(--serif); font-style:italic; color:var(--ink-soft)
 @media (max-width:520px){
   h1{font-size:1.7rem;}
   header.site-header .wrap{row-gap:14px;}
-  nav.site-nav a{padding:8px 0;}
+  .brand-logo{height:32px;}
+
+  /* full-width, evenly-sized tabs on mobile */
+  nav.site-nav{width:100%;}
+  nav.site-nav a{flex:1; text-align:center; padding:10px 0; font-size:.85rem;}
 
   /* keep photo beside the text instead of stacking, just smaller */
   .intro{gap:16px;}
-  .intro img{width:144px; height:180px;}
-  .intro .bio{min-width:0;}
+.intro img{width:160px; height:200px; object-fit:cover; border-radius:4px; flex-shrink:0; background:var(--line);}  .intro .bio{min-width:0;}
 }
