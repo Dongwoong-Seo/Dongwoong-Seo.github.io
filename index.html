@@ -12,57 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#fcfcfa;
-    --ink:#1e1e1c;
-    --ink-soft:#5b5952;
-    --line:#e2e0d6;
-    --accent:#2f4858;
-    --serif:'Newsreader','Iowan Old Style',Georgia,'Times New Roman',serif;
-    --sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-    --maxw:820px;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0; background:var(--bg); color:var(--ink);
-    font-family:var(--sans); font-size:16px; line-height:1.65;
-    -webkit-font-smoothing:antialiased;
-  }
-  a{color:var(--accent); text-decoration:none; border-bottom:1px solid transparent; transition:border-color .15s ease;}
-  a:hover{border-bottom-color:var(--accent);}
-  a:focus-visible{outline:2px solid var(--accent); outline-offset:2px; border-radius:2px;}
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
-  header.site-header{border-bottom:1px solid var(--line); padding:22px 0;}
-  header.site-header .wrap{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;}
-  .brand{font-family:var(--serif); font-size:1.15rem; font-weight:600; color:var(--ink); display:flex; align-items:center; gap:10px;}
-  .brand-logo{height:26px; width:auto;}
-  .brand:hover{border-bottom:none; color:var(--accent);}
-  nav.site-nav a{
-    font-family:var(--sans); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
-    color:var(--ink-soft); margin-left:22px; border-bottom:1px solid transparent; padding-bottom:2px;
-  }
-  nav.site-nav a:first-child{margin-left:0;}
-  nav.site-nav a:hover, nav.site-nav a.active{color:var(--ink); border-bottom-color:var(--accent);}
-  main{padding:52px 0 80px;}
-  h1{font-family:var(--serif); font-weight:600; font-size:2.1rem; margin:0 0 28px; letter-spacing:-.01em;}
-  h2.eyebrow{
-    font-family:var(--sans); font-size:.78rem; letter-spacing:.12em; text-transform:uppercase;
-    color:var(--ink-soft); margin:44px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--line);
-  }
-  .intro{display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap; margin-bottom:8px;}
-  .intro img{width:190px; height:230px; object-fit:cover; border-radius:4px; flex-shrink:0; background:var(--line);}
-  .intro .bio{flex:1; min-width:240px;}
-  .bio p{margin:0 0 14px; font-size:1.02rem;}
-  .email{font-size:.95rem; color:var(--ink-soft);}
-  ul.news{list-style:none; margin:0; padding:0;}
-  ul.news li{padding:14px 0; font-size:.98rem;}
-  ul.news .date{font-family:var(--serif); font-style:italic; color:var(--ink-soft); margin-right:6px;}
-  @media (max-width:520px){
-    .intro img{width:140px; height:170px;}
-    h1{font-size:1.7rem;}
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
