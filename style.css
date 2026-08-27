@@ -72,6 +72,6 @@ ul.news .date{font-family:var(--serif); font-style:italic; color:var(--ink-soft)
 
   /* keep photo beside the text instead of stacking, just smaller */
   .intro{gap:16px;}
-  .intro img{width:96px; height:120px;}
+  .intro img{width:160px; height:200px;}
   .intro .bio{min-width:0;}
 }
